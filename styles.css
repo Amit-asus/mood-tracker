@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  padding: 20px;
+  height: 100vh;
+  max-width: 100vw;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-image: url("./assets/istockphoto-1437887123-612x612.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Optional: Makes the image cover the area */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mood-picker {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mood-btn {
+  font-size: 24px;
+  padding: 10px;
+  margin: 5px; 
+  border: none;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.mood-btn:hover {
+  background: #ddd;
+}
+
+.timeline-controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timeline-controls button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.timeline-controls button:hover {
+  background: #0056b3;
+}
+
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mood-entry {
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 80px;
+}
+
+@media (max-width: 600px) {
+  .mood-btn {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+}

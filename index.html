@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Mood Tracker Application</h1>
+      <div class="mood-picker">
+        <h3>Log Today's Mood</h3>
+        <button class="mood-btn" data-mood="happy">😊</button>
+        <button class="mood-btn" data-mood="sad">😢</button>
+        <button class="mood-btn" data-mood="neutral">😐</button>
+        <button class="mood-btn" data-mood="excited">🤩</button>
+      </div>
+      <div class="timeline-controls">
+        <button id="day-view">Day</button>
+        <button id="week-view">Week</button>
+        <button id="month-view">Month</button>
+      </div>
+      <div id="timeline" class="timeline"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
